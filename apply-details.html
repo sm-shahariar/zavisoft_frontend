@@ -6,24 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZaviSoft</title>
     <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="shortcut icon" type="image/x-icon"
+        href="/public/images/llll.png">
 </head>
 
 <body>
-    <header class="w-[1443px] h-[72px] bg-white shadow-lg rounded-full flex justify-center items-center mx-auto">
-        <div class="w-[1414px] h-13 flex justify-between">
-            <div class="flex justify-center w-auto">
-                <div class="flex justify-center items-center content-center">
-                    <img src="/public/images/Layer_1.png" alt="layer">
+    <header
+        class="w-full max-w-[90rem] h-[128px] md:h-20 bg-white shadow-lg rounded-2xl md:rounded-full flex justify-center items-center mx-auto px-4 sm:px-6">
+        <div class="w-full sm:flex md:justify-between items-center">
+            <div class="flex md:justify-center mb-4 md:mb-0">
+                <div class="flex justify-center items-center">
+                    <img src="/public/images/Layer_1.png" alt="layer" class="h-8 md:h-10">
                 </div>
             </div>
 
-            <div class="flex justify-center items-center">
+            <div class="flex sm:justify-center items-center">
                 <button
-                    class="text-white bg-teal-500 rounded-full flex items-center justify-center px-4 py-3  w-[267px]">
-                    <span>View all opening position</span>
-                    <span class="ml-3 h-10 w-10 text-teal-500 bg-white rounded-full flex items-center justify-center">
+                    class="text-white bg-teal-500 rounded-full flex items-center justify-center px-3 py-2 md:px-4 md:py-3 w-auto md:w-[256px]">
+                    <span class="text-sm">View all opening positions</span>
+                    <span
+                        class="ml-2 md:ml-3 h-8 w-8 md:h-10 md:w-10 text-teal-500 bg-white rounded-full flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-7 h-7">
+                            stroke="currentColor" class="w-5 h-5 md:w-6 md:h-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                         </svg>
@@ -33,13 +37,14 @@
         </div>
     </header>
 
-    <div class="w-[689px] h-auto mt-[91px] mx-auto">
-        <div class="flex justify-between">
-            <p class="font-semibold text-[32px]">WordPress Developer</p>
-            <span class="text-lg text-gray-600 mt-3">Onsite-Full Time</span>
+    <div class="w-full max-w-[689px] h-auto mt-[91px] px-4 sm:px-6 md:px-0 mx-auto">
+        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
+            <p class="font-semibold text-2xl sm:text-[32px]">WordPress Developer</p>
+            <span class="text-base sm:text-lg text-gray-600">Onsite-Full Time</span>
         </div>
+
         <div class="bg-gray-50 shadow rounded-lg mt-5 border border-gray-200">
-            <div class="w-[665px] h-auto mx-auto my-auto">
+            <div class="w-full max-w-[665px] mx-auto px-4 sm:px-6 py-6">
                 <div class="mb-3">
                     <label for="name">Your Name</label>
                     <input type="text" name="name"
@@ -53,22 +58,22 @@
                         placeholder="you@gmail.com">
                 </div>
                 <div class="mb-3">
-                    <label for="name">Github link</label>
-                    <input type="text" name="name" id="name"
+                    <label for="github">Github link</label>
+                    <input type="text" name="github" id="github"
                         class="w-full bg-white rounded-full border border-gray-200 mt-2 h-12 ps-5"
                         placeholder="Type here">
                 </div>
                 <div class="mb-3">
-                    <label for="name">Linkedin link</label>
-                    <input type="text" name="name"
+                    <label for="linkedin">Linkedin link</label>
+                    <input type="text" name="linkedin" id="linkedin"
                         class="w-full bg-white rounded-full border border-gray-200 mt-2 h-12 ps-5"
                         placeholder="Type here">
                 </div>
                 <div class="mb-4">
                     <label for="attachment" class="block font-medium mb-2">Attach CV</label>
                     <label for="attachment"
-                        class="flex items-center justify-center border-2 border-dashed border-gray-300 rounded-lg p-6 cursor-pointer bg-white text-center hover:bg-gray-50 transition">
-                        <img src="/public/images/upload-03.png" alt="upload">
+                        class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 justify-center border-2 border-dashed border-gray-300 rounded-lg p-6 cursor-pointer bg-white text-center hover:bg-gray-50 transition">
+                        <img src="/public/images/upload-03.png" alt="upload" class="mx-auto sm:mx-0 w-12 h-12">
                         <div>
                             <p class="text-sm text-gray-700">Drag your file(s) or <span
                                     class="text-teal-500 font-medium cursor-pointer">browse</span></p>
@@ -77,12 +82,11 @@
                         </div>
                     </label>
                 </div>
-
             </div>
         </div>
     </div>
 
-    <div class="w-[328px] h-[147px] me-[34px] absolute left-[1600px] top-[793px]">
+    <div class="hidden md:block w-[328px] h-[147px] me-[34px] absolute left-[1600px] top-[840px]">
         <div class="flex">
             <img src="/public/images/llll.png" alt="lll" class="w-[50px] h-[50px] z-10 right-10 top-10 relative">
             <div class="absolute w-[280px] h-[133px] rounded-lg bg-white shadow-lg text-center">
@@ -106,28 +110,29 @@
     </div>
 
     <div
-        class="bg-[url(/public/images/div.overlay_image (2).svg)] w-full lg:w-[1920px] h-[623px] bg-teal-900 text-white mt-[41px]">
-        <div class="flex jsutify-center items-center">
-            <div class="w-full lg:w-[1288px] h-[562px] mx-auto flex justify-center items-center">
-                <div class="flex flex-col text-center justify-center items-center">
-                    <p class="w-[604px] lg:w-[841px] h-auto text-[64px] leading-[77px]">Ready to bring your Technology
-                        skills with us to the next level?</p>
-                    <p class="h-auto mt-4 text-base">Let us know what challenges you are <span class="block">trying to
-                            solve so we can help</span></p>
+        class="bg-[url('/public/images/div.overlay_image (2).svg')] bg-teal-900 bg-cover bg-center text-white mt-10 w-full lg:w-[1920px] h-[480px] md:h-[560px] lg:h-[623px] flex items-center">
+        <div class="w-full max-w-[1288px] mx-auto px-4 flex justify-center">
+            <div class="flex flex-col text-center items-center">
+                <p
+                    class="w-[90vw] max-w-[840px] text-[28px] md:text-[48px] lg:text-[64px] leading-[36px] md:leading-[58px] lg:leading-[77px] font-semibold">
+                    Ready to bring your<span class="inline-block md:block">Technology skills with us to the next
+                        level?</span>
 
-                    <span
-                        class="text-white border border-gray-500 rounded-full mt-7 w-16 h-16 flex justify-center items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                        </svg>
-                    </span>
-                </div>
+                </p>
+                <p class="mt-4 text-base max-w-[600px]">
+                    Let us know what challenges you are <span class="block">trying to solve so we can help</span>
+                </p>
+
+                <span
+                    class="mt-7 border border-gray-500 rounded-full w-16 h-16 flex justify-center items-center cursor-pointer hover:bg-white hover:text-teal-900 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                </span>
             </div>
         </div>
     </div>
-
 
     <div class="bg-[#141415] h-auto lg:h-[472px] text-white px-4 w-full lg:w-[1920px]">
         <div>
@@ -180,7 +185,7 @@
                                 <li>Dhanmondi-1209</li>
                             </ul>
                             <span
-                                class="rounded-full border border-gray-100 h-13 w-13 flex justify-center items-center ml-2 ms-20 absolute lg:static left-120 lg:left-auto">
+                                class="rounded-full border border-gray-100 h-13 w-13 flex justify-center items-center ml-2 ms-20 absolute lg:static left-60 lg:left-auto">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="size-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -199,7 +204,7 @@
                     <img src="/public/images/LinkedIn.png" alt="LinkedIn" class="h-7 w-7">
                 </div>
             </div>
-            <div class="border border-gray-500 w-[630px] lg:w-[1288px] mt-3 lg:ms-[282px]"></div>
+            <div class="border border-gray-500 w-full lg:w-[1288px] mt-3 lg:ms-[282px]"></div>
             <div class="mt-6 lg:ms-[280px]">
                 <div class="flex gap-6 text-white text-base">
                     <p class="text-white">Terms Of Use</p>
@@ -216,7 +221,6 @@
             </div>
         </div>
     </div>
-
 
 
 

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZaviSoft</title>
     <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="shortcut icon" type="image/x-icon"
+        href="/public/images/llll.png">
 </head>
 
 <body>
@@ -14,55 +16,60 @@
         </div>
         <div class="relative z-10">
             <header
-                class="md:w-[695px] md:h-[69px] lg:w-[1443px] lg:h-[72px] bg-white rounded-full flex justify-center items-center mx-auto">
-                <div class="w-full lg:w-[1414px] lg:h-13 flex justify-between ms-3 me-3 lg:ms-0 lg:me-0">
-                    <div class="flex justify-between lg:justify-center w-full lg:w-auto">
-                        <div class="flex justify-center items-center content-center">
-                            <img src="/public/images/Layer_1.png" alt="layer">
+                class="w-full max-w-[1443px] mx-auto h-auto lg:h-[72px] bg-white rounded-full flex justify-center items-center px-4">
+                <div class="w-full flex flex-col lg:flex-row justify-between items-center gap-4">
+                    <!-- Logo & Menu Toggle -->
+                    <div class="flex justify-between w-full lg:w-auto items-center">
+                        <div class="flex items-center ms-3">
+                            <img src="/images/Layer_1.png" alt="layer" class="h-6 md:h-8">
                         </div>
-                        <button class="hidden text-black focus:outline-none" id="menu-toggle">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                            </svg>
-                        </button>
-                        <button class="lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                            </svg>
-                        </button>
+                        <!-- Mobile Menu Toggle -->
+                        <div class="flex lg:hidden space-x-2 me-3">
+                            <button id="menu-toggle" class="text-black focus:outline-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>
+                            </button>
+                            <button class="text-black">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <nav class="hidden lg:flex justify-center items-center" id="menu">
-                        <ul class="flex gap-8">
-                            <li class="flex mt-2">
+
+                    <!-- Nav Menu -->
+                    <nav class="hidden lg:flex items-center">
+                        <ul class="flex flex-wrap gap-4 text-sm font-medium">
+                            <li class="flex items-center">
                                 Service
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="size-4 mt-1 ms-1">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                                    </svg>
-                                </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-1" fill="none"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
                             </li>
-                            <li class="mt-2">Case Study</li>
-                            <li class="mt-2">About</li>
-                            <li class="mt-2">Contact</li>
-                            <li class="bg-gray-200 px-4 rounded-full py-2">Career</li>
-                            <li class="mt-2">Blog</li>
+                            <li>Case Study</li>
+                            <li>About</li>
+                            <li>Contact</li>
+                            <li>Career</li>
+                            <li>Blog</li>
                         </ul>
                     </nav>
-                    <div class="hidden lg:flex justify-center items-center">
-                        <img src="/public/images/Whatsapp.png" alt="whatsapp" class="size-6">
-                        <span>Let's Talk</span>
-                        <button
-                            class="text-white bg-teal-500 rounded-full flex items-center justify-center px-4 py-3 md:ml-9 lg:ml-3 w-[202px] lg:w-auto">
+
+                    <!-- Call to Action -->
+                    <div class="hidden lg:flex items-center">
+                        <img src="/images/Whatsapp.png" alt="whatsapp" class="w-6 h-6 mr-2">
+                        <span class="text-sm">Let's Talk</span>
+                        <button class="bg-teal-500 text-white rounded-full flex items-center px-4 py-2 ml-3">
                             <span>Schedule a call</span>
                             <span
-                                class="ml-3 h-9 w-9 text-teal-500 bg-white rounded-full flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 md:w-6 h-6 md:h-6">
+                                class="ml-4 h-10 w-10 bg-white text-teal-500 rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                                 </svg>
@@ -72,45 +79,47 @@
                 </div>
             </header>
 
-            <div class="w-[668px] h-[292px] mt-[46px] ms-[240px]">
-                <h1 class="w-[679px] h-[90px] text-[64px] leading-[90px] font-semibold">WordPress Developer</h1>
+            <div class="w-full max-w-[668px] mt-10 px-4 md:ms-[240px]">
+                <h1 class="text-4xl md:text-5xl lg:text-[64px] leading-tight font-semibold">WordPress Developer</h1>
                 <p class="text-xs text-gray-500 mt-4">Location</p>
-                <span class="flex">
-                    <p class="text-lg text-gray-600 mt-4">Onsite-Full Time</p>
-                    <span class="border-r me-3 size-5 mt-5"></span>
-                    <p class="text-lg text-gray-600 mt-4">1-2 year experience</p>
-                </span>
-                <span class="w-[346px] h-11 bg-white rounded-full flex mt-8 justify-center items-center">৳20,000 -
-                    ৳30,000 BDT/month</span>
+                <div class="flex flex-col sm:flex-row sm:items-center sm:gap-3">
+                    <p class="text-base text-gray-600 mt-4">Onsite-Full Time</p>
+                    <span class="hidden sm:inline-block border-r h-5 mt-3"></span>
+                    <p class="text-base text-gray-600 mt-4">1-2 year experience</p>
+                </div>
+                <div
+                    class="w-[346px] h-11 bg-gray-100 sm:bg-white rounded-full flex mt-8 justify-center items-center text-sm sm:text-base">
+                    ৳20,000 - ৳30,000 BDT/month
+                </div>
             </div>
         </div>
     </div>
-    </div>
 
-    <div class="w-[938px] h-auto ms-[241px] mt-8 relative">
+    <div class="w-full max-w-[938px] mt-8 relative px-4 lg:ms-[240px]">
         <div>
             <p class="font-semibold text-lg">Description</p>
             <p class="text-base text-gray-700 mt-5 leading-7">
-                We   are   a   dynamic   digital   agency   specializing   in   creating   cutting-edge  
-                digitalexperiences   through   UI/UX   design,   branding,   and   web/product   developmentservices.
-                Our diverse clientele spans various industries across the US, Europe,Australia, and the Middle East.
-                <span class="block">
-                    As a WordPress Developer, you will be responsible for translating design files intopixel-perfect,
-                    responsive websites, ensuring seamless functionality across all majordevices. You will work closely
-                    with
-                    our design and development teams to deliverhigh-quality web solutions.
+                We are a dynamic digital agency specializing in creating cutting-edge
+                digital experiences through UI/UX design, branding, and web/product development services.
+                Our diverse clientele spans various industries across the US, Europe, Australia, and the Middle East.
+                <span class="block mt-4">
+                    As a WordPress Developer, you will be responsible for translating design files into pixel-perfect,
+                    responsive websites, ensuring seamless functionality across all major devices. You will work closely
+                    with our design and development teams to deliver high-quality web solutions.
                 </span>
             </p>
         </div>
+
         <div class="mt-8">
             <p class="font-semibold text-lg">Essential Requirement</p>
             <ul class="list-disc pl-5 text-base text-gray-700 mt-5 leading-7">
                 <li>Minimum 2 years of working experience in English Speaking environment.</li>
-                <li> Experience with Webflow, Framer, and Wix.</li>
+                <li>Experience with Webflow, Framer, and Wix.</li>
                 <li>Ability to communicate in English with international customers.</li>
                 <li>Strong sense of requirement analysis to assist the operations team with accurate estimations.</li>
             </ul>
         </div>
+
         <div class="mt-8">
             <p class="font-semibold text-lg">Your Key Responsibilities</p>
             <ul class="list-disc pl-5 text-base text-gray-700 mt-5 leading-7">
@@ -132,6 +141,7 @@
                     learning about our products to communicate our value proposition effectively.</li>
             </ul>
         </div>
+
         <div class="mt-8">
             <p class="font-semibold text-lg">Why Join Zavisoft</p>
             <ul class="list-disc pl-5 text-base text-gray-700 mt-5 leading-7">
@@ -141,27 +151,29 @@
             </ul>
         </div>
 
-        <div class="w-[476px] h-[389px] shadow-lg rounded-xl absolute left-250 bottom-180 bg-white">
-            <p class="text-gray-700 text-base flex justify-center mt-9">Ready to apply? We can't wait to meet you!</p>
-            <button
-                class="w-[426px] rounded-full bg-teal-500 text-white text-base py-2 mt-7 flex justify-center mx-auto">Apply
-                Now!</button>
-            <div class="w-[358px] h-[140px] mx-auto">
-                <p class="text-gray-700 text-base mt-3 text-center">Next, you'll face an assessment to proceed.</p>
-                <p class="text-gray-700 text-base mt-2 text-center"> Apply for one job at a time and prepare well.</p>
-                <p class="text-gray-700 text-xs mt-6 text-center"> * By applying for this job listing, you agree to our
-                </p>
-                <p class="text-gray-700 text-xs text-center mt-2 border-b border-gray-300 pb-10">Data Privacy Policy for
-                    recruitment and job applications.</p>
+        <!-- Apply Box -->
+        <div
+            class="w-full max-w-[476px] shadow-lg rounded-xl bg-white p-5 mt-10 mx-auto lg:absolute lg:left-[990px] lg:bottom-[800px]">
+            <p class="text-gray-700 text-base text-center mt-4">Ready to apply? We can't wait to meet you!</p>
+            <button class="w-full rounded-full bg-teal-500 text-white text-base py-2 mt-7 flex justify-center">
+                Apply Now!
+            </button>
+            <div class="w-full mt-6 text-center px-4">
+                <p class="text-gray-700 text-base">Next, you'll face an assessment to proceed.</p>
+                <p class="text-gray-700 text-base mt-2">Apply for one job at a time and prepare well.</p>
+                <p class="text-gray-700 text-xs mt-6">* By applying for this job listing, you agree to our</p>
+                <p class="text-gray-700 text-xs border-b border-gray-300 pb-4 mt-2">Data Privacy Policy for recruitment
+                    and job applications.</p>
             </div>
-            <div class="flex gap-3 text-gray-600 mt-10 justify-center">
+            <div class="flex gap-3 text-gray-600 mt-6 justify-center">
                 <p>Share:</p>
                 <img src="/public/images/Facebook.png" alt="Facebook">
                 <img src="/public/images/LinkedIn.png" alt="LinkedIn">
             </div>
         </div>
 
-        <div class="w-[328px] h-[147px] me-[34px] absolute left-[1310px] bottom-52">
+        <!-- Contact Card -->
+        <div class="hidden lg:block w-full max-w-[328px] mt-10 lg:absolute lg:left-[1330px] lg:bottom-72">
             <div class="flex">
                 <img src="/public/images/llll.png" alt="lll" class="w-[50px] h-[50px] z-10 right-10 top-10 relative">
                 <div class="absolute w-[280px] h-[133px] rounded-lg bg-white shadow-lg text-center">
@@ -175,7 +187,7 @@
                         <p class="text-xs ms-2">01947116736</p>
                     </div>
                 </div>
-                <button class="relative left-52 bg-gray-100 h-7 w-7 flex justify-center items-center rounded-full">
+                <button class="relative left-55 bottom-6">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-4">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
@@ -186,24 +198,26 @@
     </div>
 
     <div
-        class="bg-[url(/public/images/div.overlay_image (2).svg)] w-full lg:w-[1920px] h-[623px] bg-teal-900 text-white mt-[58px]">
-        <div class="flex jsutify-center items-center">
-            <div class="w-full lg:w-[1288px] h-[562px] mx-auto flex justify-center items-center">
-                <div class="flex flex-col text-center justify-center items-center">
-                    <p class="w-[604px] lg:w-[841px] h-auto text-[64px] leading-[77px]">Ready to bring your Technology
-                        skills with us to the next level?</p>
-                    <p class="h-auto mt-4 text-base">Let us know what challenges you are <span class="block">trying to
-                            solve so we can help</span></p>
+        class="bg-[url('/public/images/div.overlay_image (2).svg')] bg-teal-900 bg-cover bg-center text-white mt-10 w-full lg:w-[1920px] h-[480px] md:h-[560px] lg:h-[623px] flex items-center">
+        <div class="w-full max-w-[1288px] mx-auto px-4 flex justify-center">
+            <div class="flex flex-col text-center items-center">
+                <p
+                    class="w-[90vw] max-w-[840px] text-[28px] md:text-[48px] lg:text-[64px] leading-[36px] md:leading-[58px] lg:leading-[77px] font-semibold">
+                    Ready to bring your<span class="inline-block md:block">Technology skills with us to the next
+                        level?</span>
 
-                    <span
-                        class="text-white border border-gray-500 rounded-full mt-7 w-16 h-16 flex justify-center items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                        </svg>
-                    </span>
-                </div>
+                </p>
+                <p class="mt-4 text-base max-w-[600px]">
+                    Let us know what challenges you are <span class="block">trying to solve so we can help</span>
+                </p>
+
+                <span
+                    class="mt-7 border border-gray-500 rounded-full w-16 h-16 flex justify-center items-center cursor-pointer hover:bg-white hover:text-teal-900 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                </span>
             </div>
         </div>
     </div>
@@ -259,7 +273,7 @@
                                 <li>Dhanmondi-1209</li>
                             </ul>
                             <span
-                                class="rounded-full border border-gray-100 h-13 w-13 flex justify-center items-center ml-2 ms-20 absolute lg:static left-120 lg:left-auto">
+                                class="rounded-full border border-gray-100 h-13 w-13 flex justify-center items-center ml-2 ms-20 absolute lg:static left-60 lg:left-auto">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="size-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -278,7 +292,7 @@
                     <img src="/public/images/LinkedIn.png" alt="LinkedIn" class="h-7 w-7">
                 </div>
             </div>
-            <div class="border border-gray-500 w-[630px] lg:w-[1288px] mt-3 lg:ms-[282px]"></div>
+            <div class="border border-gray-500 w-full lg:w-[1288px] mt-3 lg:ms-[282px]"></div>
             <div class="mt-6 lg:ms-[280px]">
                 <div class="flex gap-6 text-white text-base">
                     <p class="text-white">Terms Of Use</p>

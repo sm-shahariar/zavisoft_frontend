@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JaviSoft</title>
+    <title>ZaviSoft</title>
     <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="shortcut icon" type="image/x-icon"
+        href="/public/images/llll.png">
 </head>
 
 <body>
@@ -15,55 +17,62 @@
         </div>
         <div class="relative z-10">
             <header
-                class="md:w-[695px] md:h-[69px] lg:w-[1443px] lg:h-[72px] bg-white rounded-full flex justify-center items-center mx-auto">
-                <div class="w-full lg:w-[1414px] lg:h-13 flex justify-between ms-3 me-3 lg:ms-0 lg:me-0">
-                    <div class="flex justify-between lg:justify-center w-full lg:w-auto">
-                        <div class="flex justify-center items-center content-center">
-                            <img src="/public/images/Layer_1.png" alt="layer">
+                class="w-full max-w-[1443px] mx-auto h-auto lg:h-[72px] bg-white rounded-full flex justify-center items-center px-4">
+                <div class="w-full flex flex-col lg:flex-row justify-between items-center">
+                    <!-- Logo & Menu Toggle -->
+                    <div class="flex justify-between w-full lg:w-auto items-center">
+                        <div class="flex items-center ms-3">
+                            <img src="/images/Layer_1.png" alt="layer" class="h-6 md:h-8">
                         </div>
-                        <button class="hidden text-black focus:outline-none" id="menu-toggle">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                            </svg>
-                        </button>
-                        <button class="lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                            </svg>
-                        </button>
+                        <!-- Mobile Menu Toggle -->
+                        <div class="flex lg:hidden space-x-2 me-3">
+                            <button id="menu-toggle" class="text-black focus:outline-none">
+                                <!-- Menu Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>
+                            </button>
+                            <button class="text-black">
+                                <!-- Close Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <nav class="hidden lg:flex justify-center items-center" id="menu">
-                        <ul class="flex gap-8">
-                            <li class="flex mt-2">
+
+                    <!-- Nav Menu -->
+                    <nav class="hidden lg:flex items-center">
+                        <ul class="flex gap-6 text-sm font-medium">
+                            <li class="flex items-center">
                                 Service
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="size-4 mt-1 ms-1">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                                    </svg>
-                                </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-1" fill="none"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
                             </li>
-                            <li class="mt-2">Case Study</li>
-                            <li class="mt-2">About</li>
-                            <li class="mt-2">Contact</li>
-                            <li class="bg-gray-200 px-4 rounded-full py-2">Career</li>
-                            <li class="mt-2">Blog</li>
+                            <li>Case Study</li>
+                            <li>About</li>
+                            <li>Contact</li>
+                            <li>Career</li>
+                            <li>Blog</li>
                         </ul>
                     </nav>
-                    <div class="hidden lg:flex justify-center items-center">
-                        <img src="/public/images/Whatsapp.png" alt="whatsapp" class="size-6">
-                        <span>Let's Talk</span>
-                        <button
-                            class="text-white bg-teal-500 rounded-full flex items-center justify-center px-4 py-3 md:ml-9 lg:ml-3 w-[202px] lg:w-auto">
+
+                    <!-- Call to Action -->
+                    <div class="hidden lg:flex items-center">
+                        <img src="/images/Whatsapp.png" alt="whatsapp" class="w-6 h-6 mr-2">
+                        <span class="text-sm">Let's Talk</span>
+                        <button class="bg-teal-500 text-white rounded-full flex items-center px-4 py-2 ml-3">
                             <span>Schedule a call</span>
                             <span
-                                class="ml-3 h-9 w-9 text-teal-500 bg-white rounded-full flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 md:w-6 h-6 md:h-6">
+                                class="ml-4 h-10 w-10 bg-white text-teal-500 rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                                 </svg>
@@ -73,308 +82,262 @@
                 </div>
             </header>
 
-            <div class="w-[726px] lg:w-[1063px] mx-auto h-auto gap-[26px] mt-[46px] lg:mt-[129px]">
-                <div>
-                    <h1 class="text-[56px] lg:text-[64px] leading-[87px] lg:leading-[90px] font-semibold  text-center">
+            <div class="w-full max-w-[1063px] px-4 mx-auto mt-12 lg:mt-[129px]">
+                <div class="text-center">
+                    <h1 class="text-[36px] sm:text-[48px] lg:text-[64px] leading-tight font-semibold">
                         Ready to level up? <span class="block lg:inline">Join our</span>
                         <span class="text-gray-500"> expanding team now!</span>
                     </h1>
 
-                    <span class="w-[67px] h-auto">
-                        <p class="text-lg text-center mt-4 w-[550px] lg:w-full mx-auto lg:mx-0">Dreaming of a job where
-                            you can build cool things and
-                            celebrate big wins?</p>
-                        <p class="mt-4 lg:mt-13 text-lg text-center"> You’re in the right spot!</p>
-                    </span>
+                    <p class="text-lg mt-4 max-w-[90%] sm:max-w-[600px] mx-auto">
+                        Dreaming of a job where you can build cool things and celebrate big wins?
+                    </p>
+                    <p class="mt-4 text-lg">You’re in the right spot!</p>
                 </div>
                 <div
-                    class="w-[602px] lg:w-[220px] h-[58px] rounded-full bg-teal-500 text-white flex justify-center items-center mx-auto mt-[26px]">
+                    class="w-full max-w-[220px] h-[58px] rounded-full bg-teal-500 text-white flex justify-center items-center mx-auto mt-6">
                     <button>See Open Positions</button>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-    <div class="border border-gray-300 w-[630px] lg:w-[1444px] mx-auto mt-12 lg:mt-[68px]"></div>
 
-    <div class="w-[630] lg:w-[1440px] h-auto lg:h-[657px] mt-12 mx-auto lg:mt-[70px]">
+    <div class="border border-gray-300 w-auto lg:w-[1444px] mx-auto mt-12 lg:mt-[68px]"></div>
+
+    <div class="w-full max-w-[1440px] h-auto mt-12 mx-auto lg:mt-[70px] px-4 sm:px-6">
         <div class="w-full h-auto flex flex-wrap lg:flex-nowrap lg:justify-between">
-            <div class="w-[630px] lg:w-[736px] mx-auto">
+            <div class="w-full max-w-[736px] mx-auto">
                 <span class="bg-gray-200 px-3 rounded-full py-2 text-xs">Our Values</span>
-                <h1 class="text-[32px] lg:text-[40px] leading-[52px] lg:leading-[52px] font-semibold mt-3">We harmonize
-                    brand, culture, & experience to
-                    spark transformation.</h1>
+                <h1
+                    class="text-[28px] sm:text-[32px] lg:text-[40px] leading-[40px] sm:leading-[48px] lg:leading-[52px] font-semibold mt-3">
+                    We harmonize brand, culture, & experience to spark transformation.
+                </h1>
             </div>
-            <div class="w-[630px] lg:w-[651px] h-auto lg:h-[139px] mt-2 lg:mt-10 lg:ms-4 mx-auto">
-                <p class="text-base leading-[32px]">We craft our approach around your project—carefully selecting
-                    methodologies based on what the task truly calls for.</p>
+            <div class="w-full max-w-[651px] h-auto mt-4 lg:mt-10 ms-2 lg:ms-4">
+                <p class="text-base leading-7 lg:leading-8 text-justify">
+                    We craft our approach around your project—carefully selecting methodologies based on what the task
+                    truly calls for.
+                </p>
             </div>
         </div>
 
-        <div class="flex flex-wrap lg:flex-nowrap lg:justify-between">
+        <div class="flex flex-wrap lg:flex-nowrap lg:justify-between mt-10">
             <img src="/public/images/image (10).png" alt="image"
-                class="w-[619px] lg:w-[731px] h-[338px] lg:h-[399px] ms-13 lg:ms-0">
-            <div class="w-[619px] lg:w-[516px] h-[345px] mt-9 lg:mt-[54px]">
-                <div class="w-[619px] lg:w-full h-[146px] lg:h-[119px] ms-13 lg:ms-0">
-                    <div class="flex lg:w-[516px]">
+                class="w-full max-w-[731px] h-auto lg:h-[399px] mx-auto mb-6 lg:mb-0">
+
+            <div class="w-full max-w-[516px] h-auto mt-0 lg:mt-[54px]">
+                <!-- First Block -->
+                <div class="w-full h-auto mb-10 px-4 lg:px-0">
+                    <div class="flex items-center">
                         <img src="/public/images/Image [w-8].png" alt="image" class="w-8 h-8 me-2">
-                        <h1 class="text-2xl font-semibold">Driven by Purpose</h1>
+                        <h2 class="text-2xl font-semibold">Driven by Purpose</h2>
                     </div>
-                    <p
-                        class="w-[619px] lg:w-[516px] h-auto lg:h-[78px] text-[20px] leading-[35px] lg:leading-[26px] text-gray-500 lg:text-black mt-2">
-                        Everything we do is rooted in a deep
-                        sense of purpose. We believe that true impact comes from aligning our work with values that
-                        matte.</p>
+                    <p class="text-[18px] sm:text-[20px] leading-[30px] lg:leading-[26px] text-gray-600 mt-2">
+                        Everything we do is rooted in a deep sense of purpose. We believe that true impact comes from
+                        aligning our work with values that matter.
+                    </p>
                 </div>
-                <div class="w-[619px] lg:w-full h-[135px] lg:h-[119px] mt-[29px] lg:mt-16 mb-10 ms-13 lg:ms-0">
-                    <div class="flex w-[619px] lg:w-[516px] h-8">
+
+                <!-- Second Block -->
+                <div class="w-full h-auto px-4 lg:px-0">
+                    <div class="flex items-center">
                         <img src="/public/images/Image [w-8] (1).png" alt="image" class="w-8 h-8 me-2">
-                        <h1 class="text-2xl font-semibold">Huuuuuge Impact</h1>
+                        <h2 class="text-2xl font-semibold">Huuuuuge Impact</h2>
                     </div>
-                    <p
-                        class="w-[619px] lg:w-[516px] h-auto lg:h-[78px] text-[20px] leading-[35px] lg:leading-[26px] text-gray-500 lg:text-black mt-2">
-                        We may be a small team, but every role
-                        here matters.You'll play a key part in shaping the future of our company and making your mark
-                        from day one.</p>
+                    <p class="text-[18px] sm:text-[20px] leading-[30px] lg:leading-[26px] text-gray-600 mt-2">
+                        We may be a small team, but every role here matters. You'll play a key part in shaping the
+                        future of our company and making your mark from day one.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="w-full lg:w-[1920px] h-[653px] lg:h-[931px] bg-gray-100 mt-7 flex flex-wrap lg:flex-nowrap lg:mx-auto">
-        <div class="w-[744px] lg:w-[1440px] h-auto lg:h-[139px] mt-8 lg:mt-[71px] ms-[50px] lg:mx-auto">
-            <span class="rounded-full bg-gray-50 px-3 py-2 text-xs">Opening Positions</span>
-            <h1 class="w-[631px] lg:w-[1210px] h-auto text-[40px] leading-[52px] font-semibold mt-2">Be part of a team
-                that's
-                redefining the tech landscape and shaping tomorrow’s solutions.</h1>
-            <div class="grid grid-cols-2 lg:grid-cols-4 mt-[29px] lg:mt-11 gap-[26px]">
-                <div class="bg-teal-900 w-[350px] h-auto lg:h-[267px] rounded-sm">
-                    <div class="ms-8 w-[234px] h-[109px] mt-6">
-                        <span class="bg-gray-50 text-xs rounded-full px-2 py-1">OnSite-Full Time</span>
-                        <p class="text-white mt-6 text-[20px]">WordPress Developer</p>
-                        <p class="mt-2 text-white">1-2 year experience</p>
+    <div class="w-full bg-gray-100 py-[55px] px-4 lg:px-0 mt-[25px]">
+        <div class="max-w-7xl mx-auto">
+            <!-- Heading -->
+            <div class="mb-10">
+                <span class="inline-block rounded-full bg-gray-50 px-3 py-2 text-xs">Opening Positions</span>
+                <h1 class="mt-2 text-2xl sm:text-3xl lg:text-4xl font-semibold leading-snug max-w-5xl">
+                    Be part of a team that's redefining the tech landscape and shaping tomorrow’s solutions.
+                </h1>
+            </div>
+
+            <!-- Responsive Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Card 1 -->
+                <div class="bg-teal-900 text-white p-6 rounded-sm flex flex-col justify-between h-full">
+                    <div>
+                        <span class="inline-block bg-gray-50 text-xs text-black rounded-full px-2 py-1">OnSite-Full
+                            Time</span>
+                        <p class="mt-6 text-lg font-semibold">WordPress Developer</p>
+                        <p class="mt-2 text-sm">1-2 year experience</p>
                     </div>
-                    <div class="mt-[50px] w-[242px] h-9 bg-white rounded-full px-2 py-2 ms-8 font-semibold">
-                        <span>৳20,000 - ৳30,000 BDT/month</span>
-                    </div>
-                    <span class="text-xs flex text-white mt-3 ms-8">
-                        See Details
-                        <span class="ms-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                stroke="currentColor" class="size-4">
-                                <path stroke-linecap="round" stroke-linejoin="round"
+                    <div class="mt-6">
+                        <div class="bg-white text-black w-fit px-4 py-2 rounded-full text-sm font-semibold">
+                            ৳20,000 - ৳30,000 BDT/month
+                        </div>
+                        <div class="flex items-center mt-3 text-xs cursor-pointer hover:underline">
+                            See Details
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                             </svg>
-                        </span>
-                    </span>
+                        </div>
+                    </div>
                 </div>
-                <div class="w-[350px] h-auto lg:h-[267px] rounded-sm bg-white">
-                    <div class="ms-8 w-[234px] h-[109px] mt-6">
-                        <span class="bg-gray-50 text-xs rounded-full px-2 py-1">OnSite-Full Time</span>
-                        <p class="mt-6 text-[20px] font-semibold">WordPress Developer</p>
-                        <p class="mt-2">1-2 year experience</p>
+
+                <!-- Card 2 -->
+                <div class="bg-white text-black p-6 rounded-sm flex flex-col justify-between h-full">
+                    <div>
+                        <span class="inline-block bg-gray-50 text-xs rounded-full px-2 py-1">OnSite-Full Time</span>
+                        <p class="mt-6 text-lg font-semibold">WordPress Developer</p>
+                        <p class="mt-2 text-sm">1-2 year experience</p>
                     </div>
-                    <div class="mt-[50px] w-[242px] h-9 bg-gray-50 rounded-full px-2 py-2 ms-8 font-semibold">
-                        <span>৳20,000 - ৳30,000 BDT/month</span>
-                    </div>
-                    <span class="text-xs flex mt-3 ms-8">
-                        See Details
-                        <span class="ms-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                stroke="currentColor" class="size-4">
-                                <path stroke-linecap="round" stroke-linejoin="round"
+                    <div class="mt-6">
+                        <div class="bg-gray-50 w-fit px-4 py-2 rounded-full text-sm font-semibold">
+                            ৳20,000 - ৳30,000 BDT/month
+                        </div>
+                        <div class="flex items-center mt-3 text-xs cursor-pointer hover:underline">
+                            See Details
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                             </svg>
-                        </span>
-                    </span>
+                        </div>
+                    </div>
                 </div>
-                <div class="hidden lg:block w-[350px] h-auto lg:h-[267px] rounded-sm bg-white">
-                    <div class="ms-8 w-[234px] h-[109px] mt-6">
-                        <span class="bg-gray-50 text-xs rounded-full px-2 py-1">OnSite-Full Time</span>
-                        <p class="mt-6 text-[20px] font-semibold">WordPress Developer</p>
-                        <p class="mt-2">1-2 year experience</p>
+
+                <!-- Card 3 -->
+                <div class="bg-white text-black p-6 rounded-sm flex flex-col justify-between h-full">
+                    <div>
+                        <span class="inline-block bg-gray-50 text-xs rounded-full px-2 py-1">OnSite-Full Time</span>
+                        <p class="mt-6 text-lg font-semibold">WordPress Developer</p>
+                        <p class="mt-2 text-sm">1-2 year experience</p>
                     </div>
-                    <div class="mt-[50px] w-[242px] h-9 bg-gray-50 rounded-full px-2 py-2 ms-8 font-semibold">
-                        <span>৳20,000 - ৳30,000 BDT/month</span>
-                    </div>
-                    <span class="text-xs flex mt-3 ms-8">
-                        See Details
-                        <span class="ms-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                stroke="currentColor" class="size-4">
-                                <path stroke-linecap="round" stroke-linejoin="round"
+                    <div class="mt-6">
+                        <div class="bg-gray-50 w-fit px-4 py-2 rounded-full text-sm font-semibold">
+                            ৳20,000 - ৳30,000 BDT/month
+                        </div>
+                        <div class="flex items-center mt-3 text-xs cursor-pointer hover:underline">
+                            See Details
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                             </svg>
-                        </span>
-                    </span>
+                        </div>
+                    </div>
                 </div>
-                <div class="hidden lg:block w-[350px] h-auto lg:h-[267px] rounded-sm bg-white">
-                    <div class="ms-8 w-[234px] h-[109px] mt-6">
-                        <span class="bg-gray-50 text-xs rounded-full px-2 py-1">OnSite-Full Time</span>
-                        <p class="mt-6 text-[20px] font-semibold">WordPress Developer</p>
-                        <p class="mt-2">1-2 year experience</p>
+
+                <!-- Card 4 -->
+                <div class="bg-white text-black p-6 rounded-sm flex flex-col justify-between h-full">
+                    <div>
+                        <span class="inline-block bg-gray-50 text-xs rounded-full px-2 py-1">OnSite-Full Time</span>
+                        <p class="mt-6 text-lg font-semibold">WordPress Developer</p>
+                        <p class="mt-2 text-sm">1-2 year experience</p>
                     </div>
-                    <div class="mt-[50px] w-[242px] h-9 bg-gray-50 rounded-full px-2 py-2 ms-8 font-semibold">
-                        <span>৳20,000 - ৳30,000 BDT/month</span>
-                    </div>
-                    <span class="text-xs flex mt-3 ms-8">
-                        See Details
-                        <span class="ms-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                stroke="currentColor" class="size-4">
-                                <path stroke-linecap="round" stroke-linejoin="round"
+                    <div class="mt-6">
+                        <div class="bg-gray-50 w-fit px-4 py-2 rounded-full text-sm font-semibold">
+                            ৳20,000 - ৳30,000 BDT/month
+                        </div>
+                        <div class="flex items-center mt-3 text-xs cursor-pointer hover:underline">
+                            See Details
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                             </svg>
-                        </span>
-                    </span>
+                        </div>
+                    </div>
                 </div>
-                <div class="hidden lg:block w-[350px] h-auto lg:h-[267px] rounded-sm bg-white">
-                    <div class="ms-8 w-[234px] h-[109px] mt-6">
-                        <span class="bg-gray-50 text-xs rounded-full px-2 py-1">OnSite-Full Time</span>
-                        <p class="mt-6 text-[20px] font-semibold">WordPress Developer</p>
-                        <p class="mt-2">1-2 year experience</p>
-                    </div>
-                    <div class="mt-[50px] w-[242px] h-9 bg-gray-50 rounded-full px-2 py-2 ms-8 font-semibold">
-                        <span>৳20,000 - ৳30,000 BDT/month</span>
-                    </div>
-                    <span class="text-xs flex mt-3 ms-8">
-                        See Details
-                        <span class="ms-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                stroke="currentColor" class="size-4">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                            </svg>
-                        </span>
-                    </span>
-                </div>
-                <div class="hidden lg:block w-[350px] h-auto lg:h-[267px] rounded-sm bg-white">
-                    <div class="ms-8 w-[234px] h-[109px] mt-6">
-                        <span class="bg-gray-50 text-xs rounded-full px-2 py-1">OnSite-Full Time</span>
-                        <p class="mt-6 text-[20px] font-semibold">WordPress Developer</p>
-                        <p class="mt-2">1-2 year experience</p>
-                    </div>
-                    <div class="mt-[50px] w-[242px] h-9 bg-gray-50 rounded-full px-2 py-2 ms-8 font-semibold">
-                        <span>৳20,000 - ৳30,000 BDT/month</span>
-                    </div>
-                    <span class="text-xs flex mt-3 ms-8">
-                        See Details
-                        <span class="ms-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                stroke="currentColor" class="size-4">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                            </svg>
-                        </span>
-                    </span>
-                </div>
-                <div class="hidden lg:block w-[350px] h-auto lg:h-[267px] rounded-sm bg-white">
-                    <div class="ms-8 w-[234px] h-[109px] mt-6">
-                        <span class="bg-gray-50 text-xs rounded-full px-2 py-1">OnSite-Full Time</span>
-                        <p class="mt-6 text-[20px] font-semibold">WordPress Developer</p>
-                        <p class="mt-2">1-2 year experience</p>
-                    </div>
-                    <div class="mt-[50px] w-[242px] h-9 bg-gray-50 rounded-full px-2 py-2 ms-8 font-semibold">
-                        <span>৳20,000 - ৳30,000 BDT/month</span>
-                    </div>
-                    <span class="text-xs flex mt-3 ms-8">
-                        See Details
-                        <span class="ms-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                stroke="currentColor" class="size-4">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                            </svg>
-                        </span>
-                    </span>
-                </div>
-                <div class="hidden lg:block w-[350px] h-auto lg:h-[267px] rounded-sm bg-white">
-                    <div class="ms-8 w-[234px] h-[109px] mt-6">
-                        <span class="bg-gray-50 text-xs rounded-full px-2 py-1">OnSite-Full Time</span>
-                        <p class="mt-6 text-[20px] font-semibold">WordPress Developer</p>
-                        <p class="mt-2">1-2 year experience</p>
-                    </div>
-                    <div class="mt-[50px] w-[242px] h-9 bg-gray-50 rounded-full px-2 py-2 ms-8 font-semibold">
-                        <span>৳20,000 - ৳30,000 BDT/month</span>
-                    </div>
-                    <span class="text-xs flex mt-3 ms-8">
-                        See Details
-                        <span class="ms-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                stroke="currentColor" class="size-4">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                            </svg>
-                        </span>
-                    </span>
-                </div>
-                <div class="lg:hidden flex gap-4 w-[183px] h-[56px] justify-center items-center mt-[29px]">
-                    <span
-                        class="rounded-full bg-white h-[56px] w-[56px] flex justify-center items-center text-gray-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
-                        </svg>
-                    </span>
-                    <span class="font-semibold text-base">03/06</span>
-                    <span class="rounded-full bg-black h-[56px] w-[56px] flex justify-center items-center text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                        </svg>
-                    </span>
-                </div>
+            </div>
+
+            <!-- Pagination-->
+            <div class="lg:hidden flex justify-start items-center gap-4 mt-10">
+                <button class="rounded-full bg-white h-14 w-14 flex justify-center items-center text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                    </svg>
+                </button>
+                <span class="font-semibold text-base">03/06</span>
+                <button class="rounded-full bg-black h-14 w-14 flex justify-center items-center text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
 
-    <div class="w-full lg:w-[1375px] h-auto mx-auto">
-        <div class="w-full lg:w-[1240px] h-auto mx-auto mt-[73px]">
-            <p class="flex items-center justify-center font-semibold text-base">Our recent clients & partners</p>
-            <div class="flex justify-center gap-3 mt-[33px]">
-                <div class="w-[242px] h-[86] flex shadow-lg rounded-2xl bg-white justify-center items-center">
-                    <img src="/public/images/_Layer_.png" alt="layer" class="w-[118px] h-[30px]">
-                </div>
-                <div class="w-[135px] flex shadow-lg rounded-2xl bg-white h-[86px] justify-center items-center">
-                    <img src="/public/images/_Layer_ (1).png" alt="layer1" class="w-[99px] h-[37px]">
-                </div>
-                <div class="w-[168px] flex shadow-lg rounded-2xl bg-white h-[86px] justify-center items-center">
-                    <img src="/public/images/_Layer_ (2).png" alt="layer2" class="w-[138px] h-7">
-                </div>
-                <div class="w-[215px] flex shadow-lg rounded-2xl bg-white h-[86px] justify-center items-center">
-                    <img src="/public/images/hatbazar 1.png" alt="hatbazar" class="w-[139px] h-9">
-                </div>
-                <div class="w-[227px] flex shadow-lg rounded-2xl bg-white h-[86px] justify-center items-center">
-                    <img src="/public/images/FastPower [Converted] 1.png" alt="fastPower" class="w-[135px] h-[38px]">
-                </div>
-                <div class="w-[291px] flex shadow-lg rounded-2xl bg-white h-[86px] justify-center items-center">
-                    <img src="/public/images/Group 1597883525.png" alt="group" class="w-[90px] h-[90px]">
-                </div>
+    <div class="mb-4 max-w-[1240px] w-full h-auto mx-auto mt-[34px] lg:mt-[52px] px-4">
+        <div class="flex justify-center mt-[36px] lg:mt-10">
+            <h1 class="font-semibold text-center text-lg md:text-xl lg:text-2xl">Our recent clients & partners</h1>
+        </div>
+
+        <!-- First Row -->
+        <div class="flex flex-cols justify-center gap-4 mt-8">
+            <div
+                class="w-[150px] sm:w-[200px] md:w-[240px] flex shadow-lg rounded-2xl bg-white p-4 h-[84px] justify-center items-center">
+                <img src="/public/images/_Layer_.png" alt="layer" class="max-h-8 object-contain">
             </div>
-            <div class="flex mt-[20px] justify-center gap-3">
-                <div class="w-[242px] h-[86] flex shadow-lg rounded-2xl bg-white justify-center items-center">
-                    <img src="/public/images/_Layer_ (2).png" alt="layer" class="w-[133px] h-7">
-                </div>
-                <div class="w-[135px] flex shadow-lg rounded-2xl bg-white h-[86px] justify-center items-center">
-                    <img src="/public/images/Group 1597883525.png" alt="layer1" class="w-[90px] h-[90px]">
-                </div>
-                <div class="w-[168px] flex shadow-lg rounded-2xl bg-white h-[86px] justify-center items-center">
-                    <img src="/public/images/_Layer_ (3).png" alt="layer2" class="w-[128px] h-8">
-                </div>
-                <div class="w-[215px] flex shadow-lg rounded-2xl bg-white h-[86px] justify-center items-center">
-                    <img src="/public/images/Group 1597883526.png" alt="hatbazar" class="w-[160px] h-[34px]">
-                </div>
-                <div class="w-[227px] flex shadow-lg rounded-2xl bg-white h-[86px] justify-center items-center">
-                    <img src="/public/images/logo 2.png" alt="fastPower" class="w-[135px] h-8">
-                </div>
-                <div class="w-[291px] flex shadow-lg rounded-2xl bg-white h-[86px] justify-center items-center">
-                    <img src="/public/images/_Layer_ (4).png" alt="group" class="w-[133px] h-9">
-                </div>
+            <div
+                class="w-[120px] sm:w-[160px] md:w-[180px] flex shadow-lg rounded-2xl bg-white p-4 h-[84px] justify-center items-center">
+                <img src="/public/images/_Layer_ (1).png" alt="layer1" class="max-h-9 object-contain">
+            </div>
+            <div
+                class="w-[130px] sm:w-[180px] md:w-[200px] flex shadow-lg rounded-2xl bg-white p-4 h-[84px] justify-center items-center">
+                <img src="/public/images/_Layer_ (2).png" alt="layer2" class="max-h-8 object-contain">
+            </div>
+            <div
+                class="w-[160px] sm:w-[200px] md:w-[220px] flex shadow-lg rounded-2xl bg-white p-4 h-[84px] justify-center items-center">
+                <img src="/public/images/hatbazar 1.png" alt="hatbazar" class="max-h-9 object-contain">
+            </div>
+            <div
+                class="w-[180px] sm:w-[220px] md:w-[240px] flex shadow-lg rounded-2xl bg-white p-4 h-[84px] justify-center items-center">
+                <img src="/public/images/FastPower [Converted] 1.png" alt="fastPower" class="max-h-9 object-contain">
+            </div>
+            <div
+                class="w-[150px] sm:w-[200px] md:w-[240px] flex shadow-lg rounded-2xl bg-white p-4 h-[84px] justify-center items-center">
+                <img src="/public/images/Group 1597883525.png" alt="group" class="max-h-[88px] object-contain">
             </div>
         </div>
-        <div class="lg:hidden w-[328px] h-[147px] me-[34px] absolute left-[1520px] top-[2340px]">
+
+        <!-- Second Row -->
+        <div class="flex justify-center gap-4 mt-8">
+            <div
+                class="w-[150px] sm:w-[200px] md:w-[240px] flex shadow-lg rounded-2xl bg-white p-4 h-[84px] justify-center items-center">
+                <img src="/public/images/_Layer_ (2).png" alt="layer2" class="max-h-8 object-contain">
+            </div>
+            <div
+                class="w-[150px] sm:w-[200px] md:w-[240px] flex shadow-lg rounded-2xl bg-white p-4 h-[84px] justify-center items-center">
+                <img src="/public/images/Group 1597883525.png" alt="group" class="max-h-[88px] object-contain">
+            </div>
+            <div
+                class="w-[150px] sm:w-[200px] md:w-[240px] flex shadow-lg rounded-2xl bg-white p-4 h-[84px] justify-center items-center">
+                <img src="/public/images/_Layer_ (3).png" alt="layer3" class="max-h-8 object-contain">
+            </div>
+            <div
+                class="w-[150px] sm:w-[200px] md:w-[240px] flex shadow-lg rounded-2xl bg-white p-4 h-[84px] justify-center items-center">
+                <img src="/public/images/Group 1597883526.png" alt="group2" class="max-h-8 object-contain">
+            </div>
+            <div
+                class="w-[150px] sm:w-[200px] md:w-[240px] flex shadow-lg rounded-2xl bg-white p-4 h-[84px] justify-center items-center">
+                <img src="/public/images/logo 2.png" alt="logo2" class="max-h-8 object-contain">
+            </div>
+            <div
+                class="w-[150px] sm:w-[200px] md:w-[240px] flex shadow-lg rounded-2xl bg-white p-4 h-[84px] justify-center items-center">
+                <img src="/public/images/_Layer_ (4).png" alt="layer4" class="max-h-9 object-contain">
+            </div>
+        </div>
+        <div class="hidden lg:block w-[328px] h-[147px] me-[34px] absolute left-[1520px] top-[1820px]">
             <div class="flex">
                 <img src="/public/images/llll.png" alt="lll" class="w-[50px] h-[50px] z-10 right-10 top-10 relative">
                 <div class="absolute w-[280px] h-[133px] rounded-lg bg-white shadow-lg text-center">
@@ -400,97 +363,98 @@
 
     <div class="hidden lg:block mt-[50px] w-full lg:w-[1375px] border border-gray-200 mx-auto "></div>
 
-    <div class="w-[650px] lg:w-full h-auto mt-[118px] lg:mt-[129px] ms-[30px] lg:ms-0">
-        <div
-            class="w-[630px] lg:w-[1369px] h-auto lg:mx-auto flex flex-wrap lg:flex-nowrap lg:justify-between ms-[30px]">
-            <div class="w-[498px] h-auto">
-                <div class="w-[487px] lg:w-full h-auto">
-                    <span class="rounded-full bg-gray-100 border border-gray-300 text-xs px-3 py-1">FAQ's</span>
-                    <p class="text-[40px] font-bold leading-[52px] lg:leading-[58px]">Frequently Asked Questions</p>
-                    <p class="w-[484px] h-auto text-base leading-8 mt-2">We put people first, understanding that a
-                        well-crafted product significantly impacts the lives of those who use it.</p>
+    <div
+        class="w-full max-w-[1376px] mx-auto mt-5 sm:mt-[56px] px-4 border-b border-gray-200 pb-9 flex flex-col lg:flex-row lg:justify-between gap-10">
+
+        <!-- Left: FAQ Header and Description -->
+        <div class="w-full lg:max-w-[496px]">
+            <span class="bg-gray-100 rounded-full px-4 py-1 text-sm inline-block">FAQ's</span>
+
+            <h1 class="text-[28px] md:text-[32px] font-semibold mt-3 leading-snug">
+                Our Frequently Asked <span class="block">Questions</span>
+            </h1>
+
+            <p class="text-base text-gray-700 mt-3 leading-7 max-w-[484px]">
+                We put people first, understanding that a well-crafted product significantly impacts the lives of those
+                who use it.
+            </p>
+
+            <button
+                class="rounded-full border border-black mt-5 px-6 py-3 font-semibold text-sm w-full md:w-[300px] lg:w-[244px] h-[58px]">
+                See our Case studies
+            </button>
+        </div>
+
+        <!-- Right: FAQ Items -->
+        <div class="w-full lg:max-w-[720px] space-y-5">
+            <!-- Item 1 -->
+            <div class="border-b border-gray-300 pb-4">
+                <div class="flex justify-between items-start">
+                    <h2 class="text-[20px] lg:text-2xl font-semibold w-full pr-4">
+                        What types of software solutions do <span class="block">you offer?</span>
+                    </h2>
+                    <span class="text-xl font-bold">-</span>
                 </div>
-                <button class="w-[630px] lg:w-[250px] h-[58px] rounded-full border mt-5">See our Case studies</button>
+                <p class="text-gray-500 mt-4">
+                    We offer a wide range of custom software solutions including web and mobile applications, enterprise
+                    systems, SaaS platforms, and cloud-based tools tailored to meet your business needs.
+                </p>
             </div>
 
-            <div class="w-[650px] lg:w-[719px] h-auto mt-10 lg:mt-0">
-                <div class="w-full h-auto mx-auto">
-                    <div class="flex items-center justify-between">
-                        <h1 class="text-xl font-semibold w-[379px] lg:w-[458px]">Why is digital marketing important for
-                            my business?
-                        </h1>
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
-                            </svg>
-                        </span>
-                    </div>
-                    <p class="mt-12 leading-8 text-base text-gray-500 pb-3 border-b w-[626px] lg:w-full">Digital
-                        marketing allows businesses
-                        to reach and engage with a wider audience, generate leads, drive website traffic, and increase
-                        brand visibility. It provides measurable results, allows for targeted marketing efforts, and
-                        enables businesses to adapt and optimize their strategies based on data and insights.</p>
+            <!-- Item 2 -->
+            <div class="border-b border-gray-300 pb-4">
+                <div class="flex justify-between items-start">
+                    <h2 class="text-[20px] lg:text-2xl font-semibold w-full pr-4">
+                        How can digital marketing help improve my <span class="block">website's visibility?</span>
+                    </h2>
+                    <span class="text-xl font-bold">+</span>
+                </div>
+            </div>
 
-                    <div class="flex items-center justify-between mt-[26px] pb-3 border-b">
-                        <h1 class="text-xl font-semibold w-[448px] lg:w-[458px]">How can digital marketing help improve
-                            my website's
-                            visibility?</h1>
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                            </svg>
-                        </span>
-                    </div>
+            <!-- Item 3 -->
+            <div class="border-b border-gray-300 pb-4">
+                <div class="flex justify-between items-start">
+                    <h2 class="text-[20px] lg:text-2xl font-semibold w-full pr-4">
+                        How do you ensure the quality of your <span class="block">software?</span>
+                    </h2>
+                    <span class="text-xl font-bold">+</span>
+                </div>
+            </div>
 
-                    <div class="flex items-center justify-between mt-[26px] pb-3 border-b">
-                        <h1 class="text-xl font-semibold w-[448px] lg:w-[458px]">How long does it take to see results
-                            from digital
-                            marketing efforts?</h1>
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                            </svg>
-                        </span>
-                    </div>
-
-                    <div class="flex items-center justify-between mt-[26px]">
-                        <h1 class="text-xl font-semibold w-[448px] lg:w-[458px]">How long does it take to see results
-                            from digital
-                            marketing efforts?</h1>
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                            </svg>
-                        </span>
-                    </div>
+            <!-- Item 4 -->
+            <div>
+                <div class="flex justify-between items-start">
+                    <h2 class="text-[20px] lg:text-2xl font-semibold w-full pr-4">
+                        What is your typical project timeline?
+                    </h2>
+                    <span class="text-xl font-bold">+</span>
                 </div>
             </div>
         </div>
+
     </div>
 
     <div
-        class="bg-[url(/public/images/div.overlay_image (2).svg)] w-full lg:w-[1920px] h-[623px] bg-teal-900 text-white mt-[63px]">
-        <div class="flex jsutify-center items-center">
-            <div class="w-full lg:w-[1288px] h-[562px] mx-auto flex justify-center items-center">
-                <div class="flex flex-col text-center justify-center items-center">
-                    <p class="w-[604px] lg:w-[841px] h-auto text-[64px] leading-[77px]">Ready to bring your Technology
-                        skills with us to the next level?</p>
-                    <p class="h-auto mt-4 text-base">Let us know what challenges you are <span class="block">trying to
-                            solve so we can help</span></p>
+        class="bg-[url('/public/images/div.overlay_image (2).svg')] bg-teal-900 bg-cover bg-center text-white mt-10 w-full lg:w-[1920px] h-[480px] md:h-[560px] lg:h-[623px] flex items-center">
+        <div class="w-full max-w-[1288px] mx-auto px-4 flex justify-center">
+            <div class="flex flex-col text-center items-center">
+                <p
+                    class="w-[90vw] max-w-[840px] text-[28px] md:text-[48px] lg:text-[64px] leading-[36px] md:leading-[58px] lg:leading-[77px] font-semibold">
+                    Ready to bring your<span class="inline-block md:block">Technology skills with us to the next
+                        level?</span>
 
-                    <span
-                        class="text-white border border-gray-500 rounded-full mt-7 w-16 h-16 flex justify-center items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                        </svg>
-                    </span>
-                </div>
+                </p>
+                <p class="mt-4 text-base max-w-[600px]">
+                    Let us know what challenges you are <span class="block">trying to solve so we can help</span>
+                </p>
+
+                <span
+                    class="mt-7 border border-gray-500 rounded-full w-16 h-16 flex justify-center items-center cursor-pointer hover:bg-white hover:text-teal-900 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                </span>
             </div>
         </div>
     </div>
@@ -582,7 +546,6 @@
             </div>
         </div>
     </div>
-
 
 
     <script></script>
